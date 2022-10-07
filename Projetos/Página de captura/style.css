@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+main, header {
+    max-width: 900px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: rgb(0, 201, 201);
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+#bg {
+    background-image: url('images/people.jpg');
+    background-size: cover;
+    min-height: 350px;
+    overflow-x: auto;
+}
+#bg > div {
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 300px;
+    margin: 2rem;
+    padding: 1.18rem;
+    float: right;
+    border-radius: 3px;
+    font-size: 1.18rem;
+}
+form > input, #select-estados {
+    border: 0;
+    width: 240px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px;
+}
+#submit {
+    border: 0;
+    background-color: rgb(0, 201, 201);
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#palestrante {
+    position: relative;
+    min-height: 300px;
+    max-width: 900px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    text-align: justify;
+    background-color: rgb(41, 41, 41);
+}
+#palestrante > img {
+    border-radius: 2px;
+    width: 30vw;
+    max-width: 150px;
+    float: left;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+}
+#palestrante > div {
+    max-width: 400px;
+    margin-left: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+
+}
+#palestrante > div > p {
+    margin: 1rem 0;
+}
+#palestrante > div > h2 {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        font-size: 3vw;
+    }
+    #bg > div {
+        float: none;
+        margin: 2rem auto;
+    }
+    #palestrante {
+        height: 360px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #palestrante {
+        height: 510px;
+        text-align: initial;
+    }
+}

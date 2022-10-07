@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        #cartao {
+            margin: 50px auto;
+            width: 400px;
+            height: 200px;
+            background-image: url("Imagens/backgorund.png");
+            background-size: cover;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #cartao > h1 {
+            font-size: 20px;
+            margin-bottom:20px;
+        }
+        #cartao > ul {
+            list-style-position: inside;
+        }
+        #instagram {
+            list-style-image: url("Imagens/Insta.png");
+        }
+        #twitter {
+            list-style-image: url("Imagens/Twitter.png");
+        }
+        #youtube {
+            list-style-image: url("Imagens/Youtube.png");
+        }
+        #cartao > ul > a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="cartao">
+        <h1>Igor Oliveira</h1>
+        <ul>
+            <a href="#instagram" id="instagram">
+                <li>/PROGBR</li>
+            </a>
+            <a href="#twitter" id="twitter">
+                <li>/PROGRBR</li>
+            </a>
+            <a href="#youtube" id="youtube">
+                <li>/PROGRAMADORBR</li>
+            </a>
+        </ul>
+    </div>
+</body>
+</html>

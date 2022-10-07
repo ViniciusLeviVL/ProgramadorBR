@@ -1,0 +1,18 @@
+main {
+    margin: auto;
+    width: 270px;
+    background-color: rgba(127, 255, 212, 0.514);
+    padding: 30px;
+    text-align: justify;
+    border-radius: 7px;
+}
+main input {
+    width: 250px;
+    padding: 6px;
+    margin-bottom: 3px; 
+}
+#btn {
+    width: 100px;
+    padding: 3px;
+    margin-top: 7px;
+}

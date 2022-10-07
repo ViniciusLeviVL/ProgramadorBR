@@ -21,7 +21,7 @@ function play(i) {
         }
         return true
     }
-} 
+}
 
 function checkPlayed(i) {
     if (board[i] == '') {

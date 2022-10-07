@@ -1,20 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: #e9f4fe;
+    color: #05223d;
 }
+
+#board {
+    width: 310px;
+    margin: auto;
+}
+
 .square {
     display: inline-block;
     height: 100px;
     width: 100px;
-    background-color: rgb(184, 184, 144);
+    background-color: #FFAFCC;
     border-radius: 5px;
     box-shadow: inset rgba(0, 0, 0, 0.336) 2px 2px 5px;
 }
+
 .square:hover {
     cursor: pointer;
 }
+
 .x::after {
     content: 'x';
     position: absolute;
@@ -23,6 +35,7 @@ body {
     font-size: 100px;
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.329)
 }
+
 .o::after {
     content: 'o';
     position: absolute;
@@ -30,4 +43,20 @@ body {
     transform: translateX(-50%) translateY(-10%);
     font-size: 100px;
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.329)
+}
+
+#playagain {
+    width: 310px;
+    height: 30px;
+    background-color: #FFAFCC;
+    color: #05223d;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.329);
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+#playagain:hover {
+    cursor: pointer;
 }

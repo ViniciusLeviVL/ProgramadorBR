@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     setTimeout(() => {
                         alert("O jogo acabou ! \n O vencedor foi: " + symbols[playerTurn].toUpperCase())
                     }, 10)
-                    document.querySelector('#board').innerHTML += `    <input id="playagain" type="button" value="Jogar novamente" onclick="document.location.reload(true)">`
                 }
             }
         })
